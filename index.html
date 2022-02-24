@@ -1,0 +1,435 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+<body>
+<header id="header">
+    <div class="container">
+        <nav>
+            <div class="logo">
+                <h1 id="title">LOGO</h1>
+            </div>
+            <div class="icons">
+                <div class="icon" id="icon1">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="12.4595" cy="8.18919" r="3.68919" stroke="#333333"/>
+                        <path d="M4.5 19.3379H19.5" stroke="#333333"/>
+                        <path d="M4.5 19.84C4.5 16.4347 8.84699 13.9134 12.2143 14.0023C15.4328 14.0872 19.5 16.4347 19.5 19.84" stroke="#333333"/>
+                    </svg>
+                </div>
+                <div class="icon" id="icon2">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M11.9 7.0948C10.6998 1.47892 1.40881 5.90389 5.76037 11.6018C10.1119 17.2996 12.4 19.4908 12.4 19.4908" stroke="#333333"/>
+                        <path d="M11.8941 7.0948C13.0944 1.47892 22.7304 5.90389 18.3789 11.6018C14.0273 17.2996 11.7 19.5 11.7 19.5" stroke="#333333"/>
+                        <path d="M11.391 6.70752L12.4043 6.70757L12.3834 7.24079H11.391V6.70752Z" fill="#333333"/>
+                    </svg>
+                </div>
+                <div class="icon" id="icon3">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M5.25468 10.5659C5.13958 9.11201 6.2884 7.86865 7.74689 7.86865H16.2531C17.7116 7.86865 18.8604 9.11201 18.7453 10.566L18.2203 17.1975C18.1174 18.4977 17.0323 19.5002 15.7281 19.5002H8.27189C6.96769 19.5002 5.88261 18.4977 5.77968 17.1975L5.25468 10.5659Z" stroke="#333333"/>
+                        <path d="M7.99999 12.5C7.99999 12.5 7.78329 4 12 4C16.2167 4 16 12.5 16 12.5" stroke="#333333"/>
+                    </svg>
+                </div>
+                <div class="icon menu" onclick="menu()" id="menu">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <line x1="3" y1="5.5" x2="21" y2="5.5" stroke="#333333"/>
+                        <line x1="3" y1="17.5" x2="21" y2="17.5" stroke="#333333"/>
+                        <line x1="3" y1="11.5" x2="21" y2="11.5" stroke="#333333"/>
+                    </svg>
+                </div>
+                <div class="close_menu icon " onclick="close_menu()" id="close_menu">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <line x1="5.01046" y1="18.2822" x2="18.6464" y2="4.6462" stroke="#333333"/>
+                        <line y1="-0.5" x2="19.2842" y2="-0.5" transform="matrix(-0.707107 -0.707107 -0.707107 0.707107 19 18.6357)" stroke="#333333"/>
+                    </svg>
+                </div>
+            </div>
+        </nav>
+        <div class="mobile_nav" id="mobile_nav">
+            <a href="#">постельное белье</a>
+            <a href="#">одежда для дома</a>
+            <a href="#">Одежда для улицы</a>
+            <a href="#">ВЫход</a>
+        </div>
+    </div>
+</header>
+<main>
+    <div class="container">
+        <div class="content">
+            <div class="left_content">
+                <div class="mySlides">
+                    <img src="img/img1.png" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                    <img src="img/slide1.png" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                    <img src="img/slide2.png" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                    <img src="img/slide3.png" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                    <img src="img/slide4.png" style="width:100%">
+                </div>
+
+                <div class="row">
+                    <div class="column">
+                        <img class="demo cursor" src="img/img1.png" style="width:100%" onclick="currentSlide(1)">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="img/slide1.png" style="width:100%" onclick="currentSlide(2)">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="img/slide2.png" style="width:100%" onclick="currentSlide(3)">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="img/slide3.png" style="width:100%" onclick="currentSlide(4)">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="img/slide4.png" style="width:100%" onclick="currentSlide(5)">
+                    </div>
+                </div>
+            </div>
+            <div class="right_content">
+                <h2 class="title">Пижама для девочек</h2>
+                <p class="code">Арт. 02765/46</p>
+                <div class="reviews">
+                    <p>Отзывы</p>
+                    <div class="star">
+                        <svg width="60" height="20" viewBox="0 0 60 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M54 7.565L54.485 8.71L54.72 9.265L55.32 9.315L56.555 9.42L55.615 10.235L55.16 10.63L55.295 11.22L55.575 12.425L54.515 11.785L54 11.465L53.485 11.775L52.425 12.415L52.705 11.21L52.84 10.62L52.385 10.225L51.445 9.41L52.68 9.305L53.28 9.255L53.515 8.7L54 7.565ZM54 5L52.595 8.315L49 8.62L51.73 10.985L50.91 14.5L54 12.635L57.09 14.5L56.27 10.985L59 8.62L55.405 8.315L54 5Z" fill="#333333"/>
+                            <path d="M42 12.635L45.09 14.5L44.27 10.985L47 8.62L43.405 8.315L42 5L40.595 8.315L37 8.62L39.73 10.985L38.91 14.5L42 12.635Z" fill="#333333"/>
+                            <path d="M30 12.635L33.09 14.5L32.27 10.985L35 8.62L31.405 8.315L30 5L28.595 8.315L25 8.62L27.73 10.985L26.91 14.5L30 12.635Z" fill="#333333"/>
+                            <path d="M18 12.635L21.09 14.5L20.27 10.985L23 8.62L19.405 8.315L18 5L16.595 8.315L13 8.62L15.73 10.985L14.91 14.5L18 12.635Z" fill="#333333"/>
+                            <path d="M6 12.635L9.09 14.5L8.27 10.985L11 8.62L7.405 8.315L6 5L4.595 8.315L1 8.62L3.73 10.985L2.91 14.5L6 12.635Z" fill="#333333"/>
+                        </svg>
+                    </div>
+                    <p>14 отзывов</p>
+                    <div class="arrow">
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4 1L12 8L4 14.5" stroke="#333333"/>
+                        </svg>
+                    </div>
+                </div>
+                <div class="price">
+                    <h2>800 ₽</h2>
+                    <del>1 500 ₽</del>
+                    <div class="arrow">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M8 5L16 12L8 18.5" stroke="#333333"/>
+                        </svg>
+                    </div>
+                </div>
+                <div class="action">
+                    <p>скидка -36%</p>
+                    <p>акция -20%</p>
+                </div>
+                <div class="select">
+                    <select>
+                        <option value="1">Выбрать размер</option>
+                        <option value="2">1</option>
+                        <option value="3">2</option>
+                    </select>
+                </div>
+                <a href="#">Определить размер</a>
+                <div class="favorite">
+                    <div class="counter">
+                        <div class="increment" onclick="increment()">+</div>
+                        <p class="count" id="counting">0</p>
+                        <div class="decrement" onclick="decrement()">-</div>
+                    </div>
+                    <div class="add" id="add">Добавить в корзину</div>
+                    <div class="heart" id="heart">
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M7.90002 3.0948C6.69981 -2.52108 -2.59119 1.90389 1.76037 7.60175C6.11193 13.2996 8.40002 15.4908 8.40002 15.4908" stroke="white"/>
+                            <path d="M7.89415 3.0948C9.09435 -2.52108 18.7304 1.90389 14.3789 7.60175C10.0273 13.2996 7.70001 15.5 7.70001 15.5" stroke="white"/>
+                            <path d="M7.39099 2.70752L8.4043 2.70757L8.38337 3.24079H7.39099V2.70752Z" fill="white"/>
+                        </svg>
+
+                    </div>
+                </div>
+                <a href="#">Купить в 1 клик</a>
+                <div class="about">
+                    <div class="block">
+                        <div class="icon">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="10" cy="10" r="7" stroke="#333333"/>
+                                <path d="M6 8C6.24928 8 8.75787 6.5 8.75787 6.5H10.0043H11.2507C11.2507 6.5 13.7507 8 14 8" stroke="#333333"/>
+                                <path d="M6.01577 7.39283L6.01576 9.17806L7.76075 9.4756L7.76075 13.9386" stroke="#333333"/>
+                                <path d="M13.9842 7.39283L13.9842 9.17806L12.2393 9.4756L12.2478 13.9386" stroke="#333333"/>
+                                <line x1="7.51145" y1="13.4385" x2="12.4971" y2="13.4385" stroke="#333333"/>
+                                <path d="M8.50859 6.5C8.50859 6.5 9.00716 8.28522 10.0043 8.28522C11.0014 8.28522 11.5 6.5 11.5 6.5" stroke="#333333"/>
+                            </svg>
+                        </div>
+                        <a href="#">Описание товара</a>
+                    </div>
+                    <div class="block">
+                        <div class="icon">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="10" cy="10" r="7" fill="white" stroke="#333333"/>
+                                <path d="M9.55453 5.5L9.55453 10.7061L13.5 13" stroke="#333333"/>
+                            </svg>
+                        </div>
+                        <a href="#">Доставка и возврат</a>
+                    </div>
+                    <div class="block">
+                        <div class="icon">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect x="3.5" y="5.5" width="13" height="9" rx="0.5" stroke="#333333"/>
+                                <rect x="4" y="8" width="12" height="2" fill="#333333"/>
+                            </svg>
+                        </div>
+                        <a href="#">Способы оплаты</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <p class="more">Посмотреть все стили</p>
+        <div class="bottom_content">
+            <div class="card1 cards">
+                <div class="img">
+                    <img src="img/img2.png" alt="">
+                </div>
+                <div class="top">
+                    <div class="icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="4.5" y="6.5" width="13" height="13" rx="1.5" stroke="white"/>
+                            <path d="M6.33784 6.63126L6.33784 6.49958C6.33784 5.39501 7.23327 4.49958 8.33784 4.49958L17.5 4.49959C18.6045 4.49959 19.5 5.39502 19.5 6.49959L19.5 15.9382C19.5 16.9853 18.5159 17.7537 17.5 17.4997V17.4997" stroke="white"/>
+                        </svg>
+                    </div>
+                </div>
+                <div class="center">
+                    <div class="text">
+                        <div class="icon">
+                            <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M8.75216 16.9953C8.63818 15.542 9.78674 14.2998 11.2445 14.2998H36.7555C38.2133 14.2998 39.3618 15.542 39.2478 16.9953L37.5851 38.1953C37.4831 39.4962 36.3976 40.4998 35.0927 40.4998H12.9073C11.6024 40.4998 10.5169 39.4962 10.4149 38.1953L8.75216 16.9953Z" stroke="white"/>
+                                <path d="M15.004 24.4857C15.004 24.4857 14.5437 7 23.5 7C32.4563 7 31.996 24.4857 31.996 24.4857" stroke="white"/>
+                            </svg>
+                        </div>
+                        <p>Узнай, что на мне</p>
+                    </div>
+                </div>
+                <div class="bottom">
+                    <div class="icon">
+                        <div class="text2">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12.4287 7.25725L13.7612 5.03654L17.1965 5.46595L18.5 7.63849V10.3206L12.0145 18.1959L5.93878 10.2507L5.05633 8.04458L6.34555 5.89588L9.35443 4.60636L11.6159 7.32009L12.0665 7.86089L12.4287 7.25725Z" fill="white" stroke="white"/>
+                                <path d="M11.9 7.0948C10.6998 1.47892 1.40879 5.90389 5.76035 11.6018C10.1119 17.2996 12.4 19.4908 12.4 19.4908" stroke="white"/>
+                                <path d="M11.8941 7.0948C13.0943 1.47892 22.7304 5.90389 18.3788 11.6018C14.0273 17.2996 11.7 19.5 11.7 19.5" stroke="white"/>
+                                <path d="M11.391 6.70752L12.4043 6.70757L12.3834 7.24079H11.391V6.70752Z" fill="white"/>
+                            </svg>
+                            <p>200</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card2">
+                <div class="card_border">
+                    <div class="cards">
+                        <div class="img">
+                            <img src="img/img3.png" alt="">
+                        </div>
+                        <div class="top">
+                            <div class="icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect x="4.5" y="6.5" width="13" height="13" rx="1.5" stroke="white"/>
+                                    <path d="M6.33784 6.63126L6.33784 6.49958C6.33784 5.39501 7.23327 4.49958 8.33784 4.49958L17.5 4.49959C18.6045 4.49959 19.5 5.39502 19.5 6.49959L19.5 15.9382C19.5 16.9853 18.5159 17.7537 17.5 17.4997V17.4997" stroke="white"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="center">
+                            <div class="text">
+                                <div class="icon">
+                                    <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M8.75216 16.9953C8.63818 15.542 9.78674 14.2998 11.2445 14.2998H36.7555C38.2133 14.2998 39.3618 15.542 39.2478 16.9953L37.5851 38.1953C37.4831 39.4962 36.3976 40.4998 35.0927 40.4998H12.9073C11.6024 40.4998 10.5169 39.4962 10.4149 38.1953L8.75216 16.9953Z" stroke="white"/>
+                                        <path d="M15.004 24.4857C15.004 24.4857 14.5437 7 23.5 7C32.4563 7 31.996 24.4857 31.996 24.4857" stroke="white"/>
+                                    </svg>
+                                </div>
+                                <p>Узнай, что на мне</p>
+                            </div>
+                        </div>
+                        <div class="bottom">
+                            <div class="icon">
+                                <div class="text2">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M12.4287 7.25725L13.7612 5.03654L17.1965 5.46595L18.5 7.63849V10.3206L12.0145 18.1959L5.93878 10.2507L5.05633 8.04458L6.34555 5.89588L9.35443 4.60636L11.6159 7.32009L12.0665 7.86089L12.4287 7.25725Z" fill="white" stroke="white"/>
+                                        <path d="M11.9 7.0948C10.6998 1.47892 1.40879 5.90389 5.76035 11.6018C10.1119 17.2996 12.4 19.4908 12.4 19.4908" stroke="white"/>
+                                        <path d="M11.8941 7.0948C13.0943 1.47892 22.7304 5.90389 18.3788 11.6018C14.0273 17.2996 11.7 19.5 11.7 19.5" stroke="white"/>
+                                        <path d="M11.391 6.70752L12.4043 6.70757L12.3834 7.24079H11.391V6.70752Z" fill="white"/>
+                                    </svg>
+                                    <p>200</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card_border">
+                    <div class="cards">
+                        <div class="img">
+                            <img src="img/img4.png" alt="">
+                        </div>
+                        <div class="top">
+                            <div class="icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect x="4.5" y="6.5" width="13" height="13" rx="1.5" stroke="white"/>
+                                    <path d="M6.33784 6.63126L6.33784 6.49958C6.33784 5.39501 7.23327 4.49958 8.33784 4.49958L17.5 4.49959C18.6045 4.49959 19.5 5.39502 19.5 6.49959L19.5 15.9382C19.5 16.9853 18.5159 17.7537 17.5 17.4997V17.4997" stroke="white"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="center">
+                            <div class="text">
+                                <div class="icon">
+                                    <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M8.75216 16.9953C8.63818 15.542 9.78674 14.2998 11.2445 14.2998H36.7555C38.2133 14.2998 39.3618 15.542 39.2478 16.9953L37.5851 38.1953C37.4831 39.4962 36.3976 40.4998 35.0927 40.4998H12.9073C11.6024 40.4998 10.5169 39.4962 10.4149 38.1953L8.75216 16.9953Z" stroke="white"/>
+                                        <path d="M15.004 24.4857C15.004 24.4857 14.5437 7 23.5 7C32.4563 7 31.996 24.4857 31.996 24.4857" stroke="white"/>
+                                    </svg>
+                                </div>
+                                <p>Узнай, что на мне</p>
+                            </div>
+                        </div>
+                        <div class="bottom">
+                            <div class="icon">
+                                <div class="text2">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M12.4287 7.25725L13.7612 5.03654L17.1965 5.46595L18.5 7.63849V10.3206L12.0145 18.1959L5.93878 10.2507L5.05633 8.04458L6.34555 5.89588L9.35443 4.60636L11.6159 7.32009L12.0665 7.86089L12.4287 7.25725Z" fill="white" stroke="white"/>
+                                        <path d="M11.9 7.0948C10.6998 1.47892 1.40879 5.90389 5.76035 11.6018C10.1119 17.2996 12.4 19.4908 12.4 19.4908" stroke="white"/>
+                                        <path d="M11.8941 7.0948C13.0943 1.47892 22.7304 5.90389 18.3788 11.6018C14.0273 17.2996 11.7 19.5 11.7 19.5" stroke="white"/>
+                                        <path d="M11.391 6.70752L12.4043 6.70757L12.3834 7.24079H11.391V6.70752Z" fill="white"/>
+                                    </svg>
+                                    <p>200</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card_border">
+                    <div class="cards">
+                        <div class="img">
+                            <img src="img/img5.png" alt="">
+                        </div>
+                        <div class="top">
+                            <div class="icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect x="4.5" y="6.5" width="13" height="13" rx="1.5" stroke="white"/>
+                                    <path d="M6.33784 6.63126L6.33784 6.49958C6.33784 5.39501 7.23327 4.49958 8.33784 4.49958L17.5 4.49959C18.6045 4.49959 19.5 5.39502 19.5 6.49959L19.5 15.9382C19.5 16.9853 18.5159 17.7537 17.5 17.4997V17.4997" stroke="white"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="center">
+                            <div class="text">
+                                <div class="icon">
+                                    <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M8.75216 16.9953C8.63818 15.542 9.78674 14.2998 11.2445 14.2998H36.7555C38.2133 14.2998 39.3618 15.542 39.2478 16.9953L37.5851 38.1953C37.4831 39.4962 36.3976 40.4998 35.0927 40.4998H12.9073C11.6024 40.4998 10.5169 39.4962 10.4149 38.1953L8.75216 16.9953Z" stroke="white"/>
+                                        <path d="M15.004 24.4857C15.004 24.4857 14.5437 7 23.5 7C32.4563 7 31.996 24.4857 31.996 24.4857" stroke="white"/>
+                                    </svg>
+                                </div>
+                                <p>Узнай, что на мне</p>
+                            </div>
+                        </div>
+                        <div class="bottom">
+                            <div class="icon">
+                                <div class="text2">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M12.4287 7.25725L13.7612 5.03654L17.1965 5.46595L18.5 7.63849V10.3206L12.0145 18.1959L5.93878 10.2507L5.05633 8.04458L6.34555 5.89588L9.35443 4.60636L11.6159 7.32009L12.0665 7.86089L12.4287 7.25725Z" fill="white" stroke="white"/>
+                                        <path d="M11.9 7.0948C10.6998 1.47892 1.40879 5.90389 5.76035 11.6018C10.1119 17.2996 12.4 19.4908 12.4 19.4908" stroke="white"/>
+                                        <path d="M11.8941 7.0948C13.0943 1.47892 22.7304 5.90389 18.3788 11.6018C14.0273 17.2996 11.7 19.5 11.7 19.5" stroke="white"/>
+                                        <path d="M11.391 6.70752L12.4043 6.70757L12.3834 7.24079H11.391V6.70752Z" fill="white"/>
+                                    </svg>
+                                    <p>200</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card_border">
+                    <div class="cards">
+                        <div class="img">
+                            <img src="img/img6.png" alt="">
+                        </div>
+                        <div class="top">
+                            <div class="icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect x="4.5" y="6.5" width="13" height="13" rx="1.5" stroke="white"/>
+                                    <path d="M6.33784 6.63126L6.33784 6.49958C6.33784 5.39501 7.23327 4.49958 8.33784 4.49958L17.5 4.49959C18.6045 4.49959 19.5 5.39502 19.5 6.49959L19.5 15.9382C19.5 16.9853 18.5159 17.7537 17.5 17.4997V17.4997" stroke="white"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="center">
+                            <div class="text">
+                                <div class="icon">
+                                    <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M8.75216 16.9953C8.63818 15.542 9.78674 14.2998 11.2445 14.2998H36.7555C38.2133 14.2998 39.3618 15.542 39.2478 16.9953L37.5851 38.1953C37.4831 39.4962 36.3976 40.4998 35.0927 40.4998H12.9073C11.6024 40.4998 10.5169 39.4962 10.4149 38.1953L8.75216 16.9953Z" stroke="white"/>
+                                        <path d="M15.004 24.4857C15.004 24.4857 14.5437 7 23.5 7C32.4563 7 31.996 24.4857 31.996 24.4857" stroke="white"/>
+                                    </svg>
+                                </div>
+                                <p>Узнай, что на мне</p>
+                            </div>
+                        </div>
+                        <div class="bottom">
+                            <div class="icon">
+                                <div class="text2">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M12.4287 7.25725L13.7612 5.03654L17.1965 5.46595L18.5 7.63849V10.3206L12.0145 18.1959L5.93878 10.2507L5.05633 8.04458L6.34555 5.89588L9.35443 4.60636L11.6159 7.32009L12.0665 7.86089L12.4287 7.25725Z" fill="white" stroke="white"/>
+                                        <path d="M11.9 7.0948C10.6998 1.47892 1.40879 5.90389 5.76035 11.6018C10.1119 17.2996 12.4 19.4908 12.4 19.4908" stroke="white"/>
+                                        <path d="M11.8941 7.0948C13.0943 1.47892 22.7304 5.90389 18.3788 11.6018C14.0273 17.2996 11.7 19.5 11.7 19.5" stroke="white"/>
+                                        <path d="M11.391 6.70752L12.4043 6.70757L12.3834 7.24079H11.391V6.70752Z" fill="white"/>
+                                    </svg>
+                                    <p>200</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+<footer>
+    <div class="container">
+        <div class="blocks">
+            <div class="block_1">
+                <h2>покупателям</h2>
+                <p>Каталог</p>
+                <p>Акции</p>
+                <p>Бренды</p>
+            </div>
+            <div class="block_2">
+                <h2>о нас</h2>
+                <p>О компании</p>
+                <p>Новости</p>
+                <p>Команда</p>
+            </div>
+            <div class="block_3">
+                <h2>Узнайте первыми о новинках и акциях</h2>
+                <div class="email">
+                    <img src="img/close.png" alt="" onclick="clearInput()">
+                    <input type="email" name="" id="email" placeholder="Адрес электронной почты">
+                </div>
+                <div class="btn_block">
+                    <button type="submit" id="subscribe-submit" onclick="check()">Подписаться</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<div id="myModal" class="modal">
+    <div class="modal-content" id="modal_text"></div>
+</div>
+<div class="big_div" id="big_div"></div>
+<script src="js/script.js"></script>
+</body>
+</html>
